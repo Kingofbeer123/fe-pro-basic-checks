@@ -21,7 +21,7 @@ export function fenceString(string) {
       }
     }
     return newStr;
-  };
+  };  
 
 /**
  * Должна быть function expression
