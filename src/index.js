@@ -29,7 +29,19 @@ export function fenceString(string) {
  * @param {string} string
  * @returns {string}
  */
-export const reducerIf = 0;
+export const reducerIf = function (action, value) {
+    if (action === 'uppercase') {
+        return value.toUpperCase();
+    } else if (action === 'lowercase') {
+        return value.toLowerCase();
+    } else if (action === 'fence') {
+        return fenceString(value);
+    } else if (action === 'capitalize') {
+        return capitalizeString(value);
+    } else {
+        return value;
+    }
+};
 
 /**
  * Стрелочная
