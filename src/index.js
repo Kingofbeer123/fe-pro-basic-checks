@@ -49,7 +49,20 @@ export const reducerIf = function (action, value) {
  * @param {string} string
  * @returns {string}
  */
-export const reducerSwitch = 0;
+export const reducerSwitch = (action, string) => {
+    switch (action) {
+      case "uppercase":
+        return string.toUpperCase();
+      case "lowercase":
+        return string.toLowerCase();
+      case "capitalize":
+        return capitalizeString(string);
+      case "fence":
+        return fenceString(string);
+      default:
+        return string;
+    }
+  };
 
 /**
  Стрелочная
