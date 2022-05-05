@@ -21,7 +21,7 @@ export function fenceString(string) {
         newStr.push(str[i].toLowerCase());
       }
     }
-    return newStr;
+    return newStr; 
   };  
 
 /**
