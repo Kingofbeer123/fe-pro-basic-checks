@@ -84,11 +84,9 @@ export const consoleLoggerWordsWhile = (string) => {
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsSplit = (string) => {
-    let i = 0;
-    do {
-    console.log(string[i]);
-    i++;
-    }
-    while (i < string.length)
+export const consoleLoggerWordsSplit = (string) => {    
+    let newString = string.split('');
+    newString.forEach(element => {
+    console.log(element);
+    });
 };
