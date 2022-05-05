@@ -74,10 +74,19 @@ export const consoleLoggerWordsFor = (string) => {
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsWhile = 0;
-
+export const consoleLoggerWordsWhile = (string) => {
+    while (true) {
+        consoleLoggerWordsFor(string);
+        break
+    }
+};
 /**
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsSplit = 0;
+export const consoleLoggerWordsSplit = (string) => {
+    let newString = string.split('');
+    newString.forEach(element => {
+        console.log(element);
+    });
+};
