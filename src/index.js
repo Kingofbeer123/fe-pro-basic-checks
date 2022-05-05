@@ -10,7 +10,18 @@ export const capitalizeString = 0;
  * @param {string} string
  * @returns {string}
  */
-export const fenceString = 0;
+export function fenceString(string) {
+    let str = string.split("");
+    let newStr = [];
+    for (let i = 0; i < str.length; i++) {
+      if (i % 2) {
+        newStr.push(str[i].toUpperCase());
+      } else {
+        newStr.push(str[i].toLowerCase());
+      }
+    }
+    return newStr.join("");
+  };
 
 /**
  * Должна быть function expression
