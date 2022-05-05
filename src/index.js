@@ -13,6 +13,7 @@ export const capitalizeString = 0;
 export function fenceString(string) {
     let str = string.split("");
     let newStr = [];
+  
     for (let i = 0; i < str.length; i++) {
       if (i % 2) {
         newStr.push(str[i].toUpperCase());
