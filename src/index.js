@@ -85,8 +85,10 @@ export const consoleLoggerWordsWhile = (string) => {
  * @param {string} string
  */
 export const consoleLoggerWordsSplit = (string) => {
-    let newString = string.split('');
-    newString.forEach(element => {
-        console.log(element);
-    });
+    let i = 0;
+    do {
+    console.log(string[i]);
+    i++;
+  }
+  while (i < string.length)
 };
