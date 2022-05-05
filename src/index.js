@@ -89,6 +89,6 @@ export const consoleLoggerWordsSplit = (string) => {
     do {
     console.log(string[i]);
     i++;
-  }
-  while (i < string.length)
+    }
+    while (i < string.length)
 };
