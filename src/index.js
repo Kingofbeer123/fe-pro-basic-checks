@@ -55,14 +55,21 @@ export const reducerSwitch = 0;
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsForOf = 0;
+export const consoleLoggerWordsForOf = (string) => {
+    for (const value of string) {
+        console.log(value);
+    }
+};
 
 /**
  Стрелочная
  * @param {string} string
  */
-export const consoleLoggerWordsFor = 0;
-
+export const consoleLoggerWordsFor = (string) => {
+    for (let i = 0; i < string.length; i++) {
+        console.log(string[i]);
+    }
+};
 /**
  Стрелочная
  * @param {string} string
